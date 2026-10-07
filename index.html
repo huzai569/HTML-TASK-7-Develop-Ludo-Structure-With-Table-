@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Board</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #1680c4, #ff1717);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 750px;
+            height: 750px;
+            table-layout: fixed;
+            background: white;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        /* =====================
+           FOUR HOME AREAS
+           ===================== */
+
+        .green-home {
+             background-color: #008000;
+        }
+
+        .yellow-home {
+                   background-color: #63e716;
+        }
+
+        .red-home {
+           background-color: #ff0000;
+        }
+
+        .blue-home {
+                  background-color: #0874c9;
+                
+        }
+
+        /* =====================
+           COLORED PATHS
+           ===================== */
+
+        /* Green path */
+        .green {
+            background: #008000;
+        }
+
+        /* Yellow path */
+        .yellow {
+            background: #ffdf32;
+        }
+
+        /* Red path */
+        .red {
+            background: #ff0808;
+        }
+
+        /* Blue path */
+        .blue {
+            background: #0874c9;
+        }
+
+        /* Center */
+        .center {
+            background: conic-gradient(
+                #ff0000,
+                #ff0000 25%,
+                #0874c9 25%,
+                #0874c9 50%,
+                #ffdf32 50%,
+                #ffdf32 75%,
+                #008000 75%
+            );
+        }  
+        </style>                                            
+</head>
+<body>
+     <table>
+
+    <!-- ROW 1 -->
+    <tr>
+        <td colspan="6" rowspan="6" class="green-home"></td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td colspan="6" rowspan="6" class="yellow-home"></td>
+    </tr>
+
+    <!-- ROW 2 -->
+    <tr>
+        <td></td>
+        <td class="yellow"></td>
+        <td class="yellow"></td>
+    </tr>
+
+    <!-- ROW 3 -->
+    <tr>
+        <td></td>
+        <td class="yellow"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 4 -->
+    <tr>
+        <td></td>
+        <td class="yellow"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 5 -->
+    <tr>
+        <td></td>
+        <td class="yellow"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 6 -->
+    <tr>
+        <td></td>
+        <td class="yellow"></td>
+        <td></td>
+    </tr>
+
+
+    <!-- ROW 7 -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td></td>
+        <td class="center" rowspan="3" colspan="3"></td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="yellow"></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 8 -->
+    <tr>
+        <td></td>
+        <td class="green"></td>
+        <td class="green"></td>
+        <td class="green"></td>
+        <td class="green"></td>
+        <td class="green"></td>
+
+        <td></td>
+
+        <td class="blue"></td>
+        <td class="blue"></td>
+        <td class="blue"></td>
+        <td class="blue"></td>
+        <td class="blue"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 9 -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+        <td></td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="blue"></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+
+    <!-- ROW 10 -->
+    <tr>
+        <td colspan="6" rowspan="6" class="red-home"></td>
+
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+
+        <td colspan="6" rowspan="6" class="blue-home"></td>
+    </tr>
+
+    <!-- ROW 11 -->
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 12 -->
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 13 -->
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 14 -->
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+
+    <!-- ROW 15 -->
+    <tr>
+        <td></td>
+        <td class="red"></td>
+        <td></td>
+    </tr>
+
+</table>
+ 
+</body>
+</html>
